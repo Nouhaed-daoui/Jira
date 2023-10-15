@@ -6,6 +6,7 @@ pipeline {
         
         maven  'Maven' // Use the name you configured in Jenkins
         jdk 'JDK'      
+        
     }
     stages {
         stage('Checkout') {
