@@ -50,7 +50,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                // Add your deployment steps here, e.g., deploying to a Kubernetes cluster
+                
+                sh "docker run -d -p 8083:8082 ${dockerImage} "
             }
         }
       
